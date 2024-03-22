@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Welcome Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="logo.png" alt="Spectrum" height="35px" />
+      <!-- <span style="color: #007bff">Spectrum</span> -->
+      <h1>Student Portal</h1>
+    </header>
+
+    <main class="main">
+      <div class="row">
+        <aside class="sidebar">
+          <h2>Navigation</h2>
+          <ul>
+            <li><a href="#" id="home-link">Home</a></li>
+            <li><a href="#" id="mentor-link">Mentor Details</a></li>
+            <li><a href="#" id="profile-link">Profile</a></li>
+            <li><a href="#" id="academics-link">Academics</a></li>
+            <li><a href="#" id="jobs-link">Jobs</a></li>
+            <li><a href="#" id="tasks-link">Tasks</a></li>
+            <li><a href="#" id="resume-link">Resume</a></li>
+            <li><a href="#" id="offers-link">Offers</a></li>
+          </ul>
+        </aside>
+
+        <div class="content-container">
+          <section id="home-content">
+            <h2>Welcome Student!</h2>
+            <p>
+              This is your personalized student portal. Manage your academic
+              progress, explore career opportunities, and connect with your
+              mentor.
+            </p>
+            <p>Your assigned mentor:</p>
+            <ul>
+              <li>Name: John Doe</li>
+              <li>Email: john.doe@spectrum.com</li>
+            </ul>
+          </section>
+
+          <section id="mentor-content" style="display: none">
+            <h2>Mentor Details</h2>
+            <p>Information about your mentor will be displayed here.</p>
+          </section>
+
+          <section id="profile-content" style="display: none">
+            <h2>Profile</h2>
+            <p>View and update your profile information here.</p>
+          </section>
+
+          <section id="academics-content" style="display: none">
+            <h2>Academics</h2>
+            <p>Track your academic progress and access learning materials.</p>
+          </section>
+
+          <section id="jobs-content" style="display: none">
+            <h2>Jobs</h2>
+            <p>Explore career opportunities and apply for relevant jobs.</p>
+          </section>
+
+          <section id="tasks-content" style="display: none">
+            <h2>Tasks</h2>
+            <p>View and manage your assigned tasks and deadlines.</p>
+          </section>
+
+          <section id="resume-content" style="display: none">
+            <h2>Resume</h2>
+            <p>Build and manage your online resume.</p>
+          </section>
+
+          <section id="offers-content" style="display: none">
+            <h2>Offers</h2>
+            <p>View and manage any job offers you receive.</p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 Spectrum. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

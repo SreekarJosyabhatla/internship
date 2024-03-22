@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentor Portal</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="logo.png" alt="Spectrum" height="35px" />
+      <h1>Mentor Portal</h1>
+    </header>
+
+    <div class="container">
+      <nav class="sidebar">
+        <h2>Navigation</h2>
+        <ul>
+          <li>
+            <a href="#" class="sidebar-link" data-target="dashboard-content"
+              >Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="#" class="sidebar-link" data-target="jobs-content"
+              >Available Jobs</a
+            >
+          </li>
+          <li>
+            <a href="#" class="sidebar-link" data-target="mentee-details"
+              >Mentee Details</a
+            >
+          </li>
+          <li>
+            <a href="#" class="sidebar-link" data-target="assign-task"
+              >Assign Task</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <main class="content">
+        <section id="dashboard-content">
+          <h2>Welcome</h2>
+          <p>This is your dashboard. Welcome!</p>
+        </section>
+
+        <section id="jobs-content" style="display: none">
+          <h2>Available Jobs</h2>
+          <ul id="jobs-list"></ul>
+        </section>
+
+        <section id="mentee-details" style="display: none">
+          <h2>Mentee Details</h2>
+          <select id="mentee-select">
+            <option value="">Select Mentee</option>
+          </select>
+
+          <div id="mentee-info" style="display: none">
+            <h3>Mentee Name</h3>
+            <p>Email:</p>
+          </div>
+
+          <div id="mentee-performance">
+            <h4>Attendance:</h4>
+            <p>Attendance data unavailable</p>
+            <h4>Academics:</h4>
+            <p>Academic data unavailable</p>
+          </div>
+        </section>
+
+        <section id="assign-task" style="display: none">
+          <h2>Assign Task</h2>
+          <form id="assign-task-form">
+            <label for="task-description">Task Description:</label>
+            <textarea
+              id="task-description"
+              placeholder="Enter detailed instructions for the task"
+            ></textarea>
+            <label for="due-date">Due Date:</label>
+            <input type="date" id="due-date" />
+            <label for="mentee-select">Assign To:</label>
+            <select id="mentee-select"></select>
+            <button type="submit">Assign Task</button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2024 Spectrum. All rights reserved.</p>
+    </footer>
+
+    <script src="script1.js"></script>
+  </body>
+</html>

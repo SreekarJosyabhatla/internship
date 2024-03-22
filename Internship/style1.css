@@ -1,0 +1,93 @@
+/* Basic styling */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensures viewport height */
+  display: flex; /* Flexbox for vertical layout */
+  flex-direction: column; /* Stack elements vertically */
+  background-color: #f8f9fa;
+}
+
+.container {
+  flex: 1; /* Content takes remaining space */
+  display: flex;
+  overflow-x: hidden; /* Remove horizontal scrollbar */
+}
+
+/* Header styling */
+.header {
+  flex: 0 0 75px; /* Set a fixed height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: #3f51b5; /* Indigo */
+  color: #fff; /* White text color */
+}
+
+.header img {
+  margin-right: 10px;
+}
+
+.header h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 190px; /* Sidebar width */
+  padding: 1rem;
+  background-color: #fff; /* Light gray background */
+}
+
+.sidebar h2 {
+  margin-bottom: 1rem;
+  color: #333; /* Darker text color */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333; /* Darker text color */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #e0e0e0; /* Light gray background on hover */
+}
+
+/* Content styling */
+.content {
+  flex: 1; /* Take remaining space */
+  padding: 1rem;
+}
+
+.content section {
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 5px;
+}
+
+/* Footer styling */
+.footer {
+  padding: 0.5rem 1rem;
+  background-color: #3f51b5; /* Indigo */
+  color: #fff; /* White text color */
+  text-align: center;
+  flex: 0 0 auto; /* Footer shrinks to fit remaining space */
+}
